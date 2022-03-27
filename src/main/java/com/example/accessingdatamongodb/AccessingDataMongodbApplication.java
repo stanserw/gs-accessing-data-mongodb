@@ -22,6 +22,7 @@ public class AccessingDataMongodbApplication  implements CommandLineRunner {
 		// save a couple of customer
 		repository.save(new Customer("Alice", "Smith"));
 		repository.save(new Customer("Bob", "Smith"));
+		repository.save(new Customer("Stan", "Molly"));
 
 		// fetch all customers
 		System.out.println("Customers found with findAll():");
